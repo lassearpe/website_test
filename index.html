@@ -7,6 +7,27 @@
 
 <article>
 
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  </style>
+
 <p>Hi, my name is Lasse. I am a internet and data geek, formally educated in the social and political sciences.</p>
 <p>I have created this personal webpage in order to display my skills while enjoying my hobbies of data science and computer programming.</p>
 
