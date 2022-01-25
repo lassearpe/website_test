@@ -13,7 +13,7 @@ article {
 .sidenote, .marginnote {
     float: right;
     clear: right;
-    margin-right: -65%; 
+    margin-right: -65%;
     width: 50%;
     font-size: 0.8rem;
     line-height: 1.4;
@@ -85,3 +85,24 @@ hr {
 blockquote {
     font-style: italic;
 }
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
